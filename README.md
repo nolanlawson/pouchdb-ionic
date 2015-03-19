@@ -46,6 +46,18 @@ angular.module('myModule').service('pouchService', PouchService)
 
 Now you can access your database from `pouchService.db`.
 
+### PouchDB promises
+
+PouchDB promises are compliant with the [A+ spec](https://promisesaplus.com/). So if you want to turn them into Angular `$q` promises, you just wrap them in `$q.when()`:
+
+```js
+$q.when(pouchdb.post({})).then(function () {
+  /* ... */
+}).catch(function () {
+  /* ... */
+});
+```
+
 ### $rootScope.$apply()
 
 Since PouchDB is asynchronous, you will often need to call `$scope.$apply()` or `$rootScope.$apply()` in order for the changes to be reflected in your UI. For instance, you might want to do:
