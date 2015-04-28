@@ -37,8 +37,8 @@ Since Angular services are singletons, and since we only need a single instance 
 
 ```js
 
-function PouchService($scope) {
-  $scope.db = new PouchDB('my_database');
+function PouchService() {
+  this.db = new PouchDB('my_database');
 }
 
 angular.module('myModule').service('pouchService', PouchService)
@@ -46,7 +46,7 @@ angular.module('myModule').service('pouchService', PouchService)
 
 Now you can access your database from `pouchService.db`.
 
-### PouchDB promises
+### $q.when()
 
 PouchDB promises are compliant with the [A+ spec](https://promisesaplus.com/). So if you want to turn them into Angular `$q` promises, you just wrap them in `$q.when()`:
 
