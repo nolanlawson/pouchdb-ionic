@@ -8,7 +8,7 @@ _Note: these instructions were written for Ionic 1. For Ionic 2, you might try [
 ## Sample app
 
 * [PouchDB Ionic 1 "hello world" app](https://github.com/nolanlawson/pouchdb-ionic-hello-world)
-* [PouchDB ionic 2 "hello world" app with TypeScript](https://github.com/nolanlawson/pouchdb-ionic-2-hello-world)
+* [PouchDB Ionic 2 "hello world" app with TypeScript](https://github.com/nolanlawson/pouchdb-ionic-2-hello-world)
 
 ## Installing PouchDB
 
