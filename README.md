@@ -3,6 +3,8 @@ pouchdb-ionic
 
 PouchDB runs great in the Ionic Framework. Here's how to get started.
 
+_Note: these instructions were written for Ionic 1. For Ionic 2, you might try [How To Use PouchDB + SQLite For Local Storage In Ionic 2](https://gonehybrid.com/how-to-use-pouchdb-sqlite-for-local-storage-in-ionic-2/)._
+
 ## Sample app
 
 * [PouchDB Ionic "hello world" app](https://github.com/nolanlawson/pouchdb-ionic-hello-world) (with screenshots!)
